@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Country</title>
+  </head>
+  <body>
+    <form name="CountryForm" id="form">
+      <label for="country">Choose a Country</label>
+      <!-- pass the value of options inside select using this.value -->
+      <!-- so that the value can be called from .js file in the check(country) -->
+      <select
+        name="country"
+        id="country"
+        onchange="check(this.value)"
+       
+      ></select>
+        <!-- <option value="default">Select here...</option> -->
+        <!-- <option value="India">INDIA</option>
+        <option value="US">US</option>
+        <option value="China">CHINA</option>
+        <option value="Pakistan">PAKISTAN</option>
+        <option value="NKorea">NORTH KOREA</option>
+        <option value="afghanistan">AFGHANISTAN</option>
+        <option value="Iran">IRAN</option> -->
+      
+      <button type="submit" id="submitBtn" disabled="true">SUBMIT</button>
+    </form>
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
